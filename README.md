@@ -16,8 +16,8 @@ This project's structure is:
         └── urfave
             └── cli
                 └── ...
-   
 ```
+Due to limitation of git, the symbolic link doesn't exist in this repo.
 
 Now I run:
 
@@ -27,7 +27,7 @@ export GOPATH=<PROJECT_ROOT>/.gogradle/project_gopath
 go build github.com/blindpirate/gogland-issue
 ```
 
-It works well since `GOPATH/src/github.com/blindpirate/gogland-issue` can be found.
+It works well since `GOPATH/src/github.com/blindpirate/gogland-issue` and its vendor directory can be found.
 
 But if I open `<PROJECT_ROOT>/.gogradle/project_gopath/src/github.com/blindpirate/gogland-issue` and set project GOPATH to '<PROJECT_ROOT>/.gogradle/project_gopath' in gogland, something doesn't work as follows:
 
