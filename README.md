@@ -33,6 +33,14 @@ But if I open `<PROJECT_ROOT>/.gogradle/project_gopath/src/github.com/blindpirat
 
 ![1](https://raw.githubusercontent.com/blindpirate/gogland-issue/master/issue.png)
 
+To reproduce:
+
+- 1. Clone this repo.
+- 2. `cd gogland-issue/.gogradle/project_gopath/src/github.com/blindpirate`
+- 3. `ln -s ../../../../.. gogland-issue` 
+- 4. In Gogland, `Open project` - `<CLONED_PROJECT>/.gogradle/project_gopath/src/github.com/blindpirate/gogland-issue` , then set GOPATH=`<CLONED_PROJECT>/.gogradle/project_gopath`.
+
+
 My environment is 
 ```
 Gogland (1.0 Preview) 1.0 EAP
